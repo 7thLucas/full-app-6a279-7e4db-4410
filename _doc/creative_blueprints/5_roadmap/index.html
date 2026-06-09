@@ -1,0 +1,75 @@
+<style>
+  .mode-landscape .sl-roadmap-layout { display: flex; flex-direction: column; height: 100%; }
+  .mode-landscape .sl-cards-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; flex: 1; }
+  .mode-portrait .sl-roadmap-layout { display: flex; flex-direction: column; height: 100%; }
+  .mode-portrait .sl-cards-row { display: flex; flex-direction: column; gap: 1rem; flex: 1; }
+</style>
+<section class="w-full h-full overflow-auto bg-white p-10">
+  <div class="sl-roadmap-layout">
+    <div class="mb-6">
+      <p class="text-xs font-bold tracking-widest uppercase mb-2" style="color:#001f3f;">What's Next</p>
+      <h2 class="text-4xl font-bold text-slate-900 leading-tight mb-2">Next-Phase Capabilities</h2>
+      <p class="text-slate-500 text-base max-w-2xl">Three concrete product goals that extend the MVP into a fully operational, multi-site warehouse platform.</p>
+    </div>
+    <div class="sl-cards-row">
+
+      <!-- Goal 1: Mobile Barcode Scanner -->
+      <div class="flex flex-col rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+        <div class="px-6 py-4" style="background-color:#001f3f;">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs font-bold tracking-widest uppercase" style="color:#ffc107;">Goal 1</span>
+          </div>
+          <h3 class="text-lg font-bold text-white leading-snug">Mobile Barcode Scanner & Quick Check-In</h3>
+        </div>
+        <div class="flex flex-col flex-1 px-6 py-5 bg-white gap-3">
+          <p class="text-slate-600 text-sm leading-relaxed">Employees scan barcodes with a phone camera to instantly pull up item location in the 3D map and update stock quantities on the warehouse floor — no desktop required.</p>
+          <ul class="space-y-2 mt-auto">
+            <li class="flex items-start gap-2 text-xs text-slate-700"><span class="mt-0.5 w-4 h-4 rounded-full flex-shrink-0 flex items-center justify-center text-white text-xs font-bold" style="background-color:#10b981;">✓</span>Camera-based barcode &amp; QR scan</li>
+            <li class="flex items-start gap-2 text-xs text-slate-700"><span class="mt-0.5 w-4 h-4 rounded-full flex-shrink-0 flex items-center justify-center text-white text-xs font-bold" style="background-color:#10b981;">✓</span>Mobile-optimized 3D location view</li>
+            <li class="flex items-start gap-2 text-xs text-slate-700"><span class="mt-0.5 w-4 h-4 rounded-full flex-shrink-0 flex items-center justify-center text-white text-xs font-bold" style="background-color:#10b981;">✓</span>Inline quantity update &amp; check-in confirmation</li>
+            <li class="flex items-start gap-2 text-xs text-slate-700"><span class="mt-0.5 w-4 h-4 rounded-full flex-shrink-0 flex items-center justify-center text-white text-xs font-bold" style="background-color:#10b981;">✓</span>Movement history entry on scan</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Goal 2: Advanced Analytics -->
+      <div class="flex flex-col rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+        <div class="px-6 py-4" style="background-color:#ffc107;">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs font-bold tracking-widest uppercase" style="color:#001f3f;">Goal 2</span>
+          </div>
+          <h3 class="text-lg font-bold leading-snug" style="color:#001f3f;">Advanced Analytics & Reporting Center</h3>
+        </div>
+        <div class="flex flex-col flex-1 px-6 py-5 bg-white gap-3">
+          <p class="text-slate-600 text-sm leading-relaxed">A strategic reporting layer for managers: velocity, aging, trends, reorder automation, and exportable reports — turning the dashboard into a decision-support tool.</p>
+          <ul class="space-y-2 mt-auto">
+            <li class="flex items-start gap-2 text-xs text-slate-700"><span class="mt-0.5 w-4 h-4 rounded-full flex-shrink-0 flex items-center justify-center text-white text-xs font-bold" style="background-color:#10b981;">✓</span>Stock movement velocity &amp; inventory aging</li>
+            <li class="flex items-start gap-2 text-xs text-slate-700"><span class="mt-0.5 w-4 h-4 rounded-full flex-shrink-0 flex items-center justify-center text-white text-xs font-bold" style="background-color:#10b981;">✓</span>Category-level trend analysis</li>
+            <li class="flex items-start gap-2 text-xs text-slate-700"><span class="mt-0.5 w-4 h-4 rounded-full flex-shrink-0 flex items-center justify-center text-white text-xs font-bold" style="background-color:#10b981;">✓</span>Reorder point automation</li>
+            <li class="flex items-start gap-2 text-xs text-slate-700"><span class="mt-0.5 w-4 h-4 rounded-full flex-shrink-0 flex items-center justify-center text-white text-xs font-bold" style="background-color:#10b981;">✓</span>Exportable PDF &amp; CSV reports</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Goal 3: Multi-Warehouse Network -->
+      <div class="flex flex-col rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+        <div class="px-6 py-4" style="background-color:#0f4c81;">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs font-bold tracking-widest uppercase" style="color:#10b981;">Goal 3</span>
+          </div>
+          <h3 class="text-lg font-bold text-white leading-snug">Multi-Warehouse Network & Transfer Management</h3>
+        </div>
+        <div class="flex flex-col flex-1 px-6 py-5 bg-white gap-3">
+          <p class="text-slate-600 text-sm leading-relaxed">Manage inventory across multiple warehouse locations in a single account. Initiate transfers between sites and track items in transit until receipt is confirmed.</p>
+          <ul class="space-y-2 mt-auto">
+            <li class="flex items-start gap-2 text-xs text-slate-700"><span class="mt-0.5 w-4 h-4 rounded-full flex-shrink-0 flex items-center justify-center text-white text-xs font-bold" style="background-color:#10b981;">✓</span>Site-level location hierarchy</li>
+            <li class="flex items-start gap-2 text-xs text-slate-700"><span class="mt-0.5 w-4 h-4 rounded-full flex-shrink-0 flex items-center justify-center text-white text-xs font-bold" style="background-color:#10b981;">✓</span>Cross-site stock transfer initiation</li>
+            <li class="flex items-start gap-2 text-xs text-slate-700"><span class="mt-0.5 w-4 h-4 rounded-full flex-shrink-0 flex items-center justify-center text-white text-xs font-bold" style="background-color:#10b981;">✓</span>In-transit item tracking</li>
+            <li class="flex items-start gap-2 text-xs text-slate-700"><span class="mt-0.5 w-4 h-4 rounded-full flex-shrink-0 flex items-center justify-center text-white text-xs font-bold" style="background-color:#10b981;">✓</span>Receipt confirmation at destination</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
