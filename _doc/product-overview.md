@@ -64,9 +64,23 @@ Industrial precision meets modern clarity. Deep navy structure, amber safety-yel
 - **Targets**: Desktop and tablet, responsive layout
 - **Quality**: Production-ready architecture
 
+## Next-Phase Feature Goals
+
+### Mobile Barcode Scanner & Quick Check-In
+Employees scan barcodes with a phone camera to instantly pull up item location in the 3D map and update stock quantities on the warehouse floor — no desktop required. Covers camera-based barcode/QR scan, mobile-optimized location view, inline quantity update, and check-in confirmation with movement history entry.
+
+### Advanced Analytics & Reporting Center
+A dedicated reporting layer for managers: stock movement velocity, inventory aging analysis, category-level trends, reorder point automation, and exportable PDF/CSV reports. Transforms the existing dashboard into a strategic decision-support tool.
+
+### Multi-Warehouse Network & Transfer Management
+Manage inventory across multiple warehouse locations within a single account. Managers can initiate stock transfers between sites, and both origin and destination track items in transit until receipt is confirmed. Extends the location hierarchy to include a Site level above Zone.
+
 ## Strategic Principles
 1. The 3D map serves search — search is the primary employee interaction; the 3D view amplifies and confirms it.
 2. Real-time accuracy is non-negotiable — stale locations cost floor time and trust.
 3. Role separation is hard — Employees can view and update stock; Managers configure and analyze.
 4. The 3D model must provide genuine operational value — every visible rack maps to real inventory data.
 5. Low-stock alerts fire proactively, before shortages impact operations.
+6. Mobile is a first-class floor tool — phone-based scanning must be as fast and accurate as desktop search.
+7. Analytics drive decisions, not just reports — velocity, aging, and reorder automation turn data into action.
+8. Multi-site is a network, not a list — transfers, in-transit tracking, and site-level views are core, not add-ons.
