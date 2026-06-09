@@ -29,11 +29,6 @@ export type ConfigurableSchemas = {
   formSchema: FieldSchemaType[];
 };
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 7c6385e (chore(app-preview): inject skaffold + env configs)
 export const configurableSchemas: ConfigurableSchemas = {
   formSchema: [
     {
@@ -54,7 +49,6 @@ export const configurableSchemas: ConfigurableSchemas = {
       required: true,
       label: "Brand Color",
       fields: [
-<<<<<<< HEAD
         { fieldName: "primary", type: "color", required: true, label: "Primary (Amber)" },
         { fieldName: "secondary", type: "color", required: true, label: "Secondary (Emerald)" },
         { fieldName: "accent", type: "color", required: true, label: "Accent (Navy)" },
@@ -122,27 +116,3 @@ export const configurableSchemas: ConfigurableSchemas = {
     },
   ],
 };
-=======
-        {
-          fieldName: "primary",
-          type: "color",
-          required: true,
-          label: "Primary",
-        },
-        {
-          fieldName: "secondary",
-          type: "color",
-          required: true,
-          label: "Secondary",
-        },
-        {
-          fieldName: "accent",
-          type: "color",
-          required: true,
-          label: "Accent",
-        },
-      ],
-    },
-  ],
-};
->>>>>>> 7c6385e (chore(app-preview): inject skaffold + env configs)
