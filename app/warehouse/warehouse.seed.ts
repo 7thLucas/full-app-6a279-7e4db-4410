@@ -7,7 +7,7 @@ import { UserRole } from "~/modules/authentication/authentication.types";
 
 const logger = createLogger("WarehouseSeed");
 
-// WareVision warehouse: 4 zones (A, B, C, D), 3 racks each, 3 shelves, 3 bins
+// MyWare warehouse: 4 zones (A, B, C, D), 3 racks each, 3 shelves, 3 bins
 // Positions correspond to 3D model layout
 const ZONES = [
   { id: "A", color: "blue", startX: -15 },
@@ -77,9 +77,9 @@ export async function seedWarehouse(): Promise<void> {
       logger.info("Seeding demo users...");
       const hash = await bcrypt.hash("Demo1234!", 12);
       await UserModel.insertMany([
-        { username: "manager", email: "manager@warevision.demo", password_hash: hash, role: UserRole.Admin, is_active: true, profile: { displayName: "Sarah Chen", jobTitle: "Warehouse Manager" } },
-        { username: "employee1", email: "employee1@warevision.demo", password_hash: hash, role: UserRole.Authenticated, is_active: true, profile: { displayName: "Alex Rivera", jobTitle: "Warehouse Associate" } },
-        { username: "employee2", email: "employee2@warevision.demo", password_hash: hash, role: UserRole.Authenticated, is_active: true, profile: { displayName: "Jordan Kim", jobTitle: "Inventory Specialist" } },
+        { username: "manager", email: "manager@myware.demo", password_hash: hash, role: UserRole.Admin, is_active: true, profile: { displayName: "Sarah Chen", jobTitle: "Warehouse Manager" } },
+        { username: "employee1", email: "employee1@myware.demo", password_hash: hash, role: UserRole.Authenticated, is_active: true, profile: { displayName: "Alex Rivera", jobTitle: "Warehouse Associate" } },
+        { username: "employee2", email: "employee2@myware.demo", password_hash: hash, role: UserRole.Authenticated, is_active: true, profile: { displayName: "Jordan Kim", jobTitle: "Inventory Specialist" } },
       ]);
     }
 

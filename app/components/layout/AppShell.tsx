@@ -120,7 +120,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             </svg>
           </div>
           <div>
-            <p className="text-white font-bold text-sm leading-tight">{config.appName ?? "WareVision 3D"}</p>
+            <p className="text-white font-bold text-sm leading-tight">{config.appName ?? "MyWare"}</p>
             <p className="text-slate-500 text-xs">{config.warehouseName ?? "Main Warehouse"}</p>
           </div>
         </div>
@@ -229,7 +229,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
 
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 text-sm min-w-0">
-            <span className="text-slate-500">{config.appName ?? "WareVision"}</span>
+            <span className="text-slate-500">{config.appName ?? "MyWare"}</span>
             <span className="text-slate-600">/</span>
             <span className="text-slate-200 font-medium truncate">
               {visibleNavItems.find((n) =>

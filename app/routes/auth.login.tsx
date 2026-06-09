@@ -55,7 +55,7 @@ export default function LoginRoute() {
               </svg>
             </div>
             <h1 className="text-2xl font-bold tracking-wide text-white">
-              {loading ? "WareVision 3D" : config.appName ?? "WareVision 3D"}
+              {loading ? "MyWare" : config.appName ?? "MyWare"}
             </h1>
           </div>
           <p className="text-slate-400 text-sm">
@@ -110,11 +110,11 @@ export default function LoginRoute() {
             <div className="space-y-1 text-xs text-slate-500">
               <div className="flex justify-between">
                 <span className="text-amber-400">Manager:</span>
-                <span className="font-mono">manager@warevision.demo / Demo1234!</span>
+                <span className="font-mono">manager@myware.demo / Demo1234!</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-emerald-400">Employee:</span>
-                <span className="font-mono">employee1@warevision.demo / Demo1234!</span>
+                <span className="font-mono">employee1@myware.demo / Demo1234!</span>
               </div>
             </div>
           </div>

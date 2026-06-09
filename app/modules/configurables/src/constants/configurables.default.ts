@@ -33,7 +33,7 @@ export type TDefaultConfigurableData = {
 };
 
 export const defaultConfigurablesData: TDefaultConfigurableData = {
-  appName: "WareVision 3D",
+  appName: "MyWare",
   logoUrl: "FILL_LOGO_URL_HERE",
   brandColor: {
     primary: "#F59E0B",

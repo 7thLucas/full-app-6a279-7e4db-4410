@@ -1,4 +1,4 @@
-# WareVision 3D — Design Guidelines
+# MyWare — Design Guidelines
 
 ## Color Palette
 - **Primary background**: Deep navy `#0F1629` (structure, sidebar, top nav)

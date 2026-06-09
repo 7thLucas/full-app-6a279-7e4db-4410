@@ -1,4 +1,4 @@
-# WareVision 3D — Product Overview
+# MyWare — Product Overview
 
 ## What It Is
 A web application that overlays a real-time interactive 3D warehouse model on full-featured inventory management. Employees find any item in seconds by searching and watching it glow in the 3D map; managers configure zones, manage stock, and run analytics from the same interface.
