@@ -1,0 +1,10 @@
+FROM quantumteknologi/qb-remix-base:1
+
+WORKDIR /app
+
+COPY . .
+
+RUN bun install
+
+# Clean Vite cache on startup and run the TypeScript Express/Vite server directly under Bun
+CMD ["bash", "-c", "rm -rf node_modules/.vite && bun --watch -r reflect-metadata server.ts"]

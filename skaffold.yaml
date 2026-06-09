@@ -1,0 +1,33 @@
+apiVersion: skaffold/v4beta7
+kind: Config
+build:
+  tagPolicy:
+    customTemplate:
+      template: "latest"
+  cluster:
+    namespace: qb-prototypes
+    dockerConfig:
+      path: .docker/config.json
+  artifacts:
+  - image: quantumteknologi/nneyo0fp-4410-staging
+    context: .
+    kaniko:
+      cache: {}
+      dockerfile: Dockerfile.dev
+    sync:
+      infer:
+        - 'app/**/*'
+        - 'src/**/*'
+        - 'public/**/*'
+        - 'components/**/*'
+        - '*.ts'
+        - '*.js'
+        - 'tsconfig.json'
+        - '*.css'
+        - '*.json'
+        - '*.html'
+manifests:
+  rawYaml:
+    - k8s/*.yaml
+deploy:
+  kubectl: {}
