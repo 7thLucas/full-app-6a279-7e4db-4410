@@ -20,6 +20,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "@qb/authentication": "file:./app/modules/authentication",
     "@qb/email": "file:./app/modules/email",
     "@radix-ui/react-label": "^2.1.9",
@@ -42,6 +43,18 @@
     "express": "^4.21.2",
     "isbot": "^4",
     "jsonwebtoken": "^9.0.3",
+=======
+    "@react-router/express": "^7.0.0",
+    "@react-router/node": "^7.0.0",
+    "@typegoose/typegoose": "^12.20.0",
+    "@types/mongoose-delete": "^1.0.6",
+    "axios": "^1.13.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "isbot": "^4",
+>>>>>>> 7c6385e (chore(app-preview): inject skaffold + env configs)
     "lucide-react": "^0.514.0",
     "mongoose": "~8.21.0",
     "mongoose-delete": "^1.0.7",
@@ -49,11 +62,17 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router": "^7.0.0",
+<<<<<<< HEAD
     "react-router-dom": "^7.0.0",
     "recharts": "^3.8.1",
     "tailwind-merge": "^3.6.0",
     "three": "^0.184.0",
     "tsx": "^4.20.6"
+=======
+    "tailwind-merge": "^3.5.0",
+    "tsx": "^4.20.6",
+    "react-router-dom": "^7.0.0"
+>>>>>>> 7c6385e (chore(app-preview): inject skaffold + env configs)
   },
   "devDependencies": {
     "@react-router/dev": "^7.0.0",
