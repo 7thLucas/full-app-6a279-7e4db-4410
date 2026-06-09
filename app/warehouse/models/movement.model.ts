@@ -2,8 +2,8 @@ import {
   prop,
   getModelForClass,
   modelOptions,
-  Ref,
 } from "@typegoose/typegoose";
+import type { Ref } from "@typegoose/typegoose";
 import { CommonTypegooseEntity } from "~/api/models/base/common-typegoose.entity";
 import { InventoryItem } from "./inventory-item.model";
 
