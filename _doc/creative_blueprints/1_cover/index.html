@@ -1,65 +1,39 @@
 <style>
-.mode-landscape .sl-layout { flex-direction: row; }
-.mode-portrait .sl-layout { flex-direction: column; }
-.mode-landscape .sl-left { width: 50%; min-width: 50%; }
-.mode-landscape .sl-right { flex: 1; }
-.mode-portrait .sl-left { width: 100%; padding: 2.5rem; flex: 1; }
-.mode-portrait .sl-right { height: 40%; }
+  .mode-landscape .sl-cover-layout { display: flex; flex-direction: row; align-items: stretch; min-height: 100%; }
+  .mode-landscape .sl-content-panel { width: 55%; display: flex; flex-direction: column; justify-content: center; }
+  .mode-landscape .sl-image-panel { width: 45%; min-height: 0; }
+  .mode-portrait .sl-cover-layout { display: flex; flex-direction: column; min-height: 100%; }
+  .mode-portrait .sl-content-panel { flex: 1; display: flex; flex-direction: column; justify-content: center; padding-bottom: 1.5rem; }
+  .mode-portrait .sl-image-panel { min-height: 280px; flex-shrink: 0; }
 </style>
 <section class="w-full h-full overflow-auto bg-white">
-  <div class="sl-layout flex h-full">
+  <div class="sl-cover-layout h-full">
+    <div class="sl-content-panel px-10 py-12">
+      <div class="flex flex-col justify-between h-full">
+        <div>
+          <p class="text-sm font-medium tracking-widest uppercase mb-6" style="color:#001f3f;">Warehouse Employee &amp; Manager</p>
+          <h1 class="text-5xl font-bold text-slate-900 leading-tight mb-6">3D Warehouse Inventory Management</h1>
+          <p class="text-xl text-slate-600 leading-relaxed max-w-md mb-6">Overlay real-time interactive 3D warehouse models with full-featured inventory control. Find any item in seconds. Manage stock with confidence.</p>
+          <div class="inline-flex items-center gap-3 border rounded-lg px-4 py-3" style="background-color:#ffc107; border-color:#001f3f40;">
+            <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#001f3f;">
+              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <span class="text-sm font-medium px-1" style="color:#ffffff;">Core vision: Simplified productivity</span>
 
-    <!-- Left: dark content column -->
-    <div class="sl-left flex flex-col justify-between p-12" style="background: #0f2744;">
-
-      <!-- Tag -->
-      <span class="self-start text-xs font-bold tracking-widest uppercase px-3 py-1.5 rounded-full"
-            style="background: #f59e0b; color: #0f2744;">Warehouse Intelligence</span>
-
-      <!-- Headline + tagline -->
-      <div>
-        <h1 class="font-black leading-none mb-5"
-            style="font-size: 2.8rem; color: #ffffff; letter-spacing: -0.02em;">
-          See Your<br>Warehouse<br>in Three<br>Dimensions.
-        </h1>
-        <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.75; max-width: 340px;">
-          An interactive 3D warehouse map that shows every employee exactly
-          where every item lives — found in seconds, not minutes.
-        </p>
-      </div>
-
-      <!-- Attribution -->
-      <data-attribution />
-    </div>
-
-    <!-- Right: warehouse photo + stat strip -->
-    <div class="sl-right relative overflow-hidden">
-      <img
-        src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=modern+large+industrial+warehouse+interior+tall+metal+shelving+racks+organized+aisles+dramatic+overhead+lighting+professional+wide+angle+photography"
-        alt="Modern warehouse interior"
-        class="w-full h-full object-cover"
-      />
-      <!-- Gradient overlay -->
-      <div class="absolute bottom-0 left-0 right-0 p-8"
-           style="background: linear-gradient(to top, rgba(15,39,68,0.95) 0%, transparent 100%);">
-        <div class="flex items-center gap-8">
-          <div>
-            <div class="font-black text-white" style="font-size: 1.4rem;">3D Live</div>
-            <div class="text-xs" style="color: #94a3b8;">Interactive Map</div>
           </div>
-          <div style="width: 1px; height: 36px; background: #334155;"></div>
-          <div>
-            <div class="font-black text-white" style="font-size: 1.4rem;">Real-Time</div>
-            <div class="text-xs" style="color: #94a3b8;">Stock Sync</div>
-          </div>
-          <div style="width: 1px; height: 36px; background: #334155;"></div>
-          <div>
-            <div class="font-black text-white" style="font-size: 1.4rem;">Role-Based</div>
-            <div class="text-xs" style="color: #94a3b8;">Access Control</div>
-          </div>
+        </div>
+        <div class="mt-auto pt-8">
+          <data-attribution />
         </div>
       </div>
     </div>
-
+    <div class="sl-image-panel relative overflow-hidden">
+      <div class="absolute inset-0" style="background:linear-gradient(135deg, #001f3f, #001f3f20);"></div>
+      <div class="absolute inset-0 flex items-center justify-center p-8">
+        <img src="http://localhost:8001/common/image-generation?prompt=modern+warehouse+with+3D+digital+overlay%2C+shelves+racks+real-time+inventory+tracking&amp;keyspace=nneyo0fp&amp;user_id=4410" alt="cover" class="max-w-full max-h-full object-contain drop-shadow-2xl rounded-2xl" />
+      </div>
+    </div>
   </div>
 </section>
