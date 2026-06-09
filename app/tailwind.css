@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,76 +6,77 @@
 
 @layer base {
   :root {
-    --background: #ffffff;
-    --foreground: #09090b;
-    --card: #ffffff;
-    --card-foreground: #09090b;
-    --popover: #ffffff;
-    --popover-foreground: #09090b;
-    --primary: #2563eb;
-    --primary-foreground: #ffffff;
-    --secondary: #f4f4f5;
-    --secondary-foreground: #18181b;
-    --muted: #f4f4f5;
-    --muted-foreground: #71717a;
-    --accent: #f4f4f5;
-    --accent-foreground: #18181b;
-    --destructive: #ef4444;
-    --destructive-foreground: #fafafa;
-    --border: #e4e4e7;
-    --input: #e4e4e7;
-    --ring: #2563eb;
+    /* WareVision 3D — Industrial Dark Theme */
+    --background: #0F1629;
+    --foreground: #F1F5F9;
+    --card: #1A2340;
+    --card-foreground: #F1F5F9;
+    --popover: #1A2340;
+    --popover-foreground: #F1F5F9;
+    --primary: #F59E0B;
+    --primary-foreground: #0F1629;
+    --secondary: #1A2340;
+    --secondary-foreground: #F1F5F9;
+    --muted: #1A2340;
+    --muted-foreground: #94A3B8;
+    --accent: #F59E0B;
+    --accent-foreground: #0F1629;
+    --destructive: #EF4444;
+    --destructive-foreground: #F1F5F9;
+    --border: #2D3F5E;
+    --input: #0F1629;
+    --ring: #F59E0B;
     --radius: 0.5rem;
-    --chart-1: #f97316;
-    --chart-2: #0d9488;
-    --chart-3: #1e3a5f;
-    --chart-4: #d4a017;
-    --chart-5: #ea580c;
-    --navbar-background: #ffffff;
-    --sidebar-background: #fafafa;
-    --sidebar-foreground: #3f3f46;
-    --sidebar-primary: #2563eb;
-    --sidebar-primary-foreground: #ffffff;
-    --sidebar-accent: #f4f4f5;
-    --sidebar-accent-foreground: #18181b;
-    --sidebar-border: #e4e4e7;
-    --sidebar-ring: #2563eb;
+    --chart-1: #F59E0B;
+    --chart-2: #10B981;
+    --chart-3: #3B82F6;
+    --chart-4: #8B5CF6;
+    --chart-5: #EF4444;
+    --navbar-background: #0F1629;
+    --sidebar-background: #0F1629;
+    --sidebar-foreground: #F1F5F9;
+    --sidebar-primary: #F59E0B;
+    --sidebar-primary-foreground: #0F1629;
+    --sidebar-accent: #1A2340;
+    --sidebar-accent-foreground: #F1F5F9;
+    --sidebar-border: #2D3F5E;
+    --sidebar-ring: #F59E0B;
   }
 
   .dark {
-    --background: #171719;
-    --foreground: #f4f4f5;
-    --card: #171719;
-    --card-foreground: #f4f4f5;
-    --popover: #171719;
-    --popover-foreground: #f4f4f5;
-    --primary: #3b82f6;
-    --primary-foreground: #ffffff;
-    --secondary: #27272a;
-    --secondary-foreground: #f4f4f5;
-    --muted: #27272a;
-    --muted-foreground: #a1a1aa;
-    --accent: #27272a;
-    --accent-foreground: #f4f4f5;
-    --destructive: #ef4444;
-    --destructive-foreground: #fafafa;
-    --border: #3f3f47;
-    --input: #27272a;
-    --ring: #3b82f6;
-    --chart-1: #3b82f6;
-    --chart-2: #10b981;
-    --chart-3: #f59e0b;
-    --chart-4: #8b5cf6;
-    --chart-5: #ec4899;
-    --navbar-background: #09090b;
-    --sidebar-background: #09090b;
-    --sidebar-foreground: #f4f4f5;
-    --sidebar-primary: #3b82f6;
-    --sidebar-primary-foreground: #ffffff;
-    --sidebar-accent: #171719;
-    --sidebar-accent-foreground: #f4f4f5;
-    --sidebar-border: #3f3f46;
-    --sidebar-ring: #3b82f6;
+    --background: #0F1629;
+    --foreground: #F1F5F9;
+    --card: #1A2340;
+    --card-foreground: #F1F5F9;
+    --popover: #1A2340;
+    --popover-foreground: #F1F5F9;
+    --primary: #F59E0B;
+    --primary-foreground: #0F1629;
+    --secondary: #1A2340;
+    --secondary-foreground: #F1F5F9;
+    --muted: #1A2340;
+    --muted-foreground: #94A3B8;
+    --accent: #F59E0B;
+    --accent-foreground: #0F1629;
+    --destructive: #EF4444;
+    --destructive-foreground: #F1F5F9;
+    --border: #2D3F5E;
+    --input: #0F1629;
+    --ring: #F59E0B;
+    --chart-1: #F59E0B;
+    --chart-2: #10B981;
+    --chart-3: #3B82F6;
+    --chart-4: #8B5CF6;
+    --chart-5: #EF4444;
+    --navbar-background: #0F1629;
+    --sidebar-background: #0F1629;
+    --sidebar-foreground: #F1F5F9;
+    --sidebar-primary: #F59E0B;
+    --sidebar-primary-foreground: #0F1629;
+    --sidebar-accent: #1A2340;
+    --sidebar-accent-foreground: #F1F5F9;
+    --sidebar-border: #2D3F5E;
+    --sidebar-ring: #F59E0B;
   }
 }
 
@@ -86,101 +87,49 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', 'Poppins', 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
 }
 
-/* React DatePicker Styles */
-.react-datepicker-wrapper {
-  width: 100%;
-}
-
-.react-datepicker {
-  font-family: inherit;
-  border: 1px solid var(--border);
-  border-radius: calc(var(--radius) - 2px);
-  background-color: var(--background);
-  color: var(--foreground);
-}
-
-.react-datepicker__header {
-  background-color: var(--background);
-  border-bottom: 1px solid var(--border);
-  border-top-left-radius: calc(var(--radius) - 2px);
-  border-top-right-radius: calc(var(--radius) - 2px);
-  padding-top: 0.75rem;
-}
-
-.react-datepicker__current-month {
-  color: var(--foreground);
-  font-weight: 600;
-  padding-bottom: 0.5rem;
-}
-
-.react-datepicker__day-name {
-  color: var(--muted-foreground);
-  font-weight: 500;
-}
-
-.react-datepicker__day {
-  color: var(--foreground);
-  border-radius: calc(var(--radius) - 4px);
-}
-
-.react-datepicker__day:hover {
-  background-color: var(--accent);
-  color: var(--accent-foreground);
-}
-
-.react-datepicker__day--selected,
-.react-datepicker__day--in-selecting-range,
-.react-datepicker__day--in-range {
-  background-color: var(--primary);
-  color: var(--primary-foreground);
-}
-
-.react-datepicker__day--keyboard-selected {
-  background-color: var(--primary);
-  color: var(--primary-foreground);
-}
-
-.react-datepicker__day--disabled {
-  color: var(--muted-foreground);
-  opacity: 0.5;
-}
-
-.react-datepicker__time-container {
-  border-left: 1px solid var(--border);
-}
-
-.react-datepicker__time-container .react-datepicker__time {
-  background-color: var(--background);
-}
-
-.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
-  border-bottom-right-radius: calc(var(--radius) - 2px);
-}
-
-.react-datepicker__time-list-item {
-  color: var(--foreground);
-}
-
-.react-datepicker__time-list-item:hover {
-  background-color: var(--accent);
-  color: var(--accent-foreground);
-}
-
-.react-datepicker__time-list-item--selected {
-  background-color: var(--primary);
-  color: var(--primary-foreground);
-}
-
-body {
-  background: #f2f2f7;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-}
-
-/* Hide scrollbar for native mobile feel */
+/* Custom scrollbar for dark theme */
 ::-webkit-scrollbar {
-  display: none;
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F1629;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2D3F5E;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F59E0B;
+}
+
+/* Amber glow animation for highlighted bins */
+@keyframes amber-pulse {
+  0%, 100% {
+    box-shadow: 0 0 8px 2px rgba(245, 158, 11, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 20px 8px rgba(245, 158, 11, 0.9);
+  }
+}
+
+.amber-glow {
+  animation: amber-pulse 1.5s ease-in-out infinite;
+}
+
+/* Low stock alert banner */
+@keyframes slide-in-top {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.alert-banner {
+  animation: slide-in-top 0.3s ease-out;
 }

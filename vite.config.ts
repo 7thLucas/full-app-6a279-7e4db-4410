@@ -30,6 +30,8 @@ export default defineConfig({
       // "posthog-js",
       // "posthog-js/react",
     ],
+    // Three.js and R3F must NOT be SSR-bundled — they use browser APIs
+    external: ["three", "@react-three/fiber", "@react-three/drei"],
   },
   server: {
     allowedHosts: true,

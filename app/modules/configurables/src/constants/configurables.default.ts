@@ -12,35 +12,45 @@ export type TBrandColor = {
   accent: string;
 };
 
+export type TZone = {
+  id: string;
+  name: string;
+  color: string;
+};
+
 export type TDefaultConfigurableData = {
   appName: string;
   logoUrl: string;
   brandColor: TBrandColor;
-  // Mirror new schema fields here. Example:
-  //   maxItemsPerPage?: number;
-  //   enableNotifications?: boolean;
-  //   featuredCategories?: string[];
+  tagline?: string;
+  warehouseName?: string;
+  lowStockThresholdDefault?: number;
+  itemsPerPage?: number;
+  showInventoryValue?: boolean;
+  enableBarcodeSearch?: boolean;
+  currency?: string;
+  zones?: TZone[];
 };
 
 export const defaultConfigurablesData: TDefaultConfigurableData = {
-  appName: "FILL_APP_NAME_HERE",
+  appName: "WareVision 3D",
   logoUrl: "FILL_LOGO_URL_HERE",
   brandColor: {
-    primary: "FILL_PRIMARY_COLOR_HERE",
-    secondary: "FILL_SECONDARY_COLOR_HERE",
-    accent: "FILL_ACCENT_COLOR_HERE",
+    primary: "#F59E0B",
+    secondary: "#10B981",
+    accent: "#0F1629",
   },
-  // ─────────────────────────────────────────────────────────────────────
-  // Add new field defaults here. See RULES.md §5 for per-type shape.
-  // Required branding fields → use the FILL_X_HERE placeholder pattern.
-  // Optional/typed defaults → real value with a "// fill it here" comment:
-  //
-  //   maxItemsPerPage: 12,                     // fill it here
-  //   enableNotifications: true,               // fill it here
-  //   featuredCategories: [],                  // fill it here
-  //   defaultLanguage: "en",                   // must match enum options
-  //   launchDate: "2025-01-01T00:00:00.000Z",  // ISO-8601
-  //   heroImage: "",                           // resolved URL after upload
-  //   galleryImages: [],                       // array of resolved URLs
-  // ─────────────────────────────────────────────────────────────────────
+  tagline: "See your warehouse in three dimensions. Find every item in seconds.",
+  warehouseName: "Main Warehouse",
+  lowStockThresholdDefault: 10,
+  itemsPerPage: 50,
+  showInventoryValue: true,
+  enableBarcodeSearch: true,
+  currency: "$",
+  zones: [
+    { id: "A", name: "Zone A — Electronics", color: "#3B82F6" },
+    { id: "B", name: "Zone B — Office Supplies", color: "#14B8A6" },
+    { id: "C", name: "Zone C — Tools & Hardware", color: "#8B5CF6" },
+    { id: "D", name: "Zone D — Cleaning & Safety", color: "#F97316" },
+  ],
 };
