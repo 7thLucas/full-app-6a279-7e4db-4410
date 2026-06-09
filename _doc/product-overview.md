@@ -1,64 +1,72 @@
-Build a 3D Warehouse Inventory Management application that helps employees locate inventory items quickly using an interactive 3D warehouse map.
+# 3D Warehouse Inventory Management System
 
-The application should display a 3D warehouse layout containing aisles, shelves, racks, and storage zones. Users can search for an item and instantly see its exact location highlighted within the 3D warehouse view.
+## What It Is
+A web application that overlays a real-time interactive 3D warehouse model on full-featured inventory management. Employees find any item in seconds by searching and watching it glow in the 3D map; managers configure zones, manage stock, and run analytics from the same interface.
 
-Core Features:
-- Inventory management
-- Item search
-- Stock quantity tracking
-- Location assignment (Zone > Rack > Shelf > Bin)
-- Barcode or QR code support
-- Low stock alerts
+## Core Promise
+"See your warehouse in three dimensions. Find every item in seconds."
+
+The decisive differentiator is a genuinely operational 3D model — not decorative effects. Every shelf, rack, and zone maps to real inventory data and updates live as movements happen on the floor.
+
+## Personas
+
+### Warehouse Employee (primary)
+- Searches inventory by name, SKU, or barcode scan
+- Views exact storage location highlighted in the interactive 3D map
+- Follows a visual navigation path from the warehouse entrance to the item
+- Updates stock quantities and records inventory movements
+- Views full item details and movement history
+
+### Warehouse Manager
+- Adds, edits, and removes inventory items
+- Configures warehouse layout and storage zones
+- Views inventory analytics and dashboard metrics
+- Monitors stock levels with automatic low-stock alerts
+- Generates and reviews inventory reports (by category, movement, utilization)
+
+## Brand & Tone
+Industrial precision meets modern clarity. Deep navy structure, amber safety-yellow accents, emerald status indicators. Confident, operational — no jargon, no clutter. The UI is a working tool: fast, clear, and visually organized for both desktop and tablet.
+
+## Feature Scope
+
+### Inventory
+- Location hierarchy: Zone → Rack → Shelf → Bin
+- Stock quantity tracking with low-stock alerts (automatic, proactive)
+- Barcode and QR code support
 - Inventory movement history
 
-3D Features:
-- Interactive 3D warehouse model
+### 3D Visualization (Three.js / React Three Fiber)
+- Interactive 3D warehouse model: aisles, shelves, racks, color-coded storage zones
 - Zoom, rotate, and pan controls
-- Highlight item locations in 3D
-- Color-coded storage zones
-- Visual navigation path from entrance to item location
-- Real-time inventory location updates
+- Item location highlighted in amber on search
+- Visual navigation path from warehouse entrance to item location
+- Real-time inventory location and quantity updates
 
-Employee Features:
-- Search inventory by name, SKU, or barcode
-- View item details
-- View exact storage location
-- Update stock quantities
-- Record inventory movements
-
-Manager Features:
-- Add, edit, and remove inventory items
-- Configure warehouse layout
-- Manage storage zones
-- View inventory analytics
-- Monitor stock levels
-
-Dashboard:
+### Dashboard
 - Total inventory count
-- Low stock items
-- Recently moved items
-- Warehouse occupancy utilization
+- Low-stock item list
+- Recently moved items feed
+- Warehouse occupancy / utilization rate
 - Inventory value summary
 
-Reports:
+### Reports
 - Inventory by category
 - Stock movement history
-- Low stock report
+- Low-stock report
 - Warehouse utilization report
 
-UI/UX:
-- Modern industrial dashboard
-- Responsive desktop and tablet design
-- Smooth 3D interactions
-- Fast search experience
-- Clear visual indicators for inventory status
+## Technical Architecture
+- **3D engine**: Three.js or React Three Fiber
+- **Stack**: Full frontend and backend
+- **Database**: Relational schema — locations, inventory, movements, users
+- **Auth**: Role-based access — Employee and Manager roles, hard separation
+- **Updates**: Real-time inventory sync
+- **Targets**: Desktop and tablet, responsive layout
+- **Quality**: Production-ready architecture
 
-Technical Requirements:
-- Interactive 3D warehouse built with Three.js or React Three Fiber
-- Complete frontend and backend
-- Database schema
-- Authentication and role-based access
-- Real-time inventory updates
-- Production-ready architecture
-
-Generate a complete application with a realistic 3D warehouse visualization that provides genuine operational value rather than decorative 3D effects.
+## Strategic Principles
+1. The 3D map serves search — search is the primary employee interaction; the 3D view amplifies and confirms it.
+2. Real-time accuracy is non-negotiable — stale locations cost floor time and trust.
+3. Role separation is hard — Employees can view and update stock; Managers configure and analyze.
+4. The 3D model must provide genuine operational value — every visible rack maps to real inventory data.
+5. Low-stock alerts fire proactively, before shortages impact operations.
