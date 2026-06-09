@@ -1,0 +1,65 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-left { width: 50%; min-width: 50%; }
+.mode-landscape .sl-right { flex: 1; }
+.mode-portrait .sl-left { width: 100%; padding: 2.5rem; flex: 1; }
+.mode-portrait .sl-right { height: 40%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: dark content column -->
+    <div class="sl-left flex flex-col justify-between p-12" style="background: #0f2744;">
+
+      <!-- Tag -->
+      <span class="self-start text-xs font-bold tracking-widest uppercase px-3 py-1.5 rounded-full"
+            style="background: #f59e0b; color: #0f2744;">Warehouse Intelligence</span>
+
+      <!-- Headline + tagline -->
+      <div>
+        <h1 class="font-black leading-none mb-5"
+            style="font-size: 2.8rem; color: #ffffff; letter-spacing: -0.02em;">
+          See Your<br>Warehouse<br>in Three<br>Dimensions.
+        </h1>
+        <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.75; max-width: 340px;">
+          An interactive 3D warehouse map that shows every employee exactly
+          where every item lives — found in seconds, not minutes.
+        </p>
+      </div>
+
+      <!-- Attribution -->
+      <data-attribution />
+    </div>
+
+    <!-- Right: warehouse photo + stat strip -->
+    <div class="sl-right relative overflow-hidden">
+      <img
+        src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=modern+large+industrial+warehouse+interior+tall+metal+shelving+racks+organized+aisles+dramatic+overhead+lighting+professional+wide+angle+photography"
+        alt="Modern warehouse interior"
+        class="w-full h-full object-cover"
+      />
+      <!-- Gradient overlay -->
+      <div class="absolute bottom-0 left-0 right-0 p-8"
+           style="background: linear-gradient(to top, rgba(15,39,68,0.95) 0%, transparent 100%);">
+        <div class="flex items-center gap-8">
+          <div>
+            <div class="font-black text-white" style="font-size: 1.4rem;">3D Live</div>
+            <div class="text-xs" style="color: #94a3b8;">Interactive Map</div>
+          </div>
+          <div style="width: 1px; height: 36px; background: #334155;"></div>
+          <div>
+            <div class="font-black text-white" style="font-size: 1.4rem;">Real-Time</div>
+            <div class="text-xs" style="color: #94a3b8;">Stock Sync</div>
+          </div>
+          <div style="width: 1px; height: 36px; background: #334155;"></div>
+          <div>
+            <div class="font-black text-white" style="font-size: 1.4rem;">Role-Based</div>
+            <div class="text-xs" style="color: #94a3b8;">Access Control</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
