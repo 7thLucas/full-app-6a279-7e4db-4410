@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nneyo0fp-4410-staging-svc
+  namespace: qb-prototypes
+spec:
+  selector:
+    app: nneyo0fp-4410-staging
+  ports:
+  - port: 80
+    targetPort: 3000

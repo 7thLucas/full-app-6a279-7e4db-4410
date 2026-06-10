@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nneyo0fp-4410-staging-ingress
+  namespace: qb-prototypes
+  annotations:
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-southeast-3:071784445115:certificate/a9e32c68-66fc-4d96-a03d-bd6eea4d41f8
+    alb.ingress.kubernetes.io/group.name: public-root-staging
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/ssl-redirect: '443'
+    alb.ingress.kubernetes.io/target-type: ip
+    kubernetes.io/ingress.class: alb
+spec:
+  ingressClassName: alb
+  rules:
+  - host: "nneyo0fp-4410-staging.quantumbyte.ai"
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: nneyo0fp-4410-staging-svc
+            port:
+              number: 80

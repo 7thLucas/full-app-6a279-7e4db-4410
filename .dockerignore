@@ -8,3 +8,5 @@ _doc
 dist
 build
 coverage
+DESIGN.md
+PRODUCT.md
